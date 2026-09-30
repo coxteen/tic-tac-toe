@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://dpd7klekgb8my"]
 
-[ext_resource type="Script" uid="uid://cptgj563es3jf" path="res://Main.gd" id="1_r487a"]
-[ext_resource type="PackedScene" uid="uid://csuw5ofbpt7lk" path="res://board.tscn" id="2_olovn"]
-[ext_resource type="PackedScene" uid="uid://c7roobj8bhhtg" path="res://circle.tscn" id="2_vb0x1"]
-[ext_resource type="PackedScene" uid="uid://b4r6f22xdjnrl" path="res://cross.tscn" id="3_er5up"]
-[ext_resource type="Texture2D" uid="uid://di7yh50otd3de" path="res://grid.png" id="5_7mycd"]
-[ext_resource type="PackedScene" uid="uid://v4uqnrm7o451" path="res://game_over_menu.tscn" id="5_o75m5"]
+[ext_resource type="Script" uid="uid://cptgj563es3jf" path="res://scripts/Main.gd" id="1_r487a"]
+[ext_resource type="PackedScene" uid="uid://b1jnumja7vqa5" path="res://scenes/board.tscn" id="2_olovn"]
+[ext_resource type="PackedScene" uid="uid://bkobfdl6g6p0k" path="res://scenes/circle.tscn" id="2_vb0x1"]
+[ext_resource type="PackedScene" uid="uid://dt870aqepi15d" path="res://scenes/cross.tscn" id="3_er5up"]
+[ext_resource type="Texture2D" uid="uid://di7yh50otd3de" path="res://assets/grid.png" id="5_7mycd"]
+[ext_resource type="PackedScene" uid="uid://v4uqnrm7o451" path="res://scenes/game_over_menu.tscn" id="5_o75m5"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rlvci"]
 bg_color = Color(5.19812e-06, 0.603039, 0.724258, 1)

@@ -19,7 +19,7 @@ var moves: int
 
 func _ready():
 	board_size = $Board.texture.get_width()
-	cell_size = board_size / 3
+	cell_size = floori(float(board_size) / 3.0)
 	player_panel_pos = $PlayerLabel.get_position()
 	new_game()
 
@@ -31,7 +31,7 @@ func _input(event):
 				if grid_data[grid_pos.y][grid_pos.x] == 0:
 					moves += 1
 					grid_data[grid_pos.y][grid_pos.x] = player
-					create_marker(player, grid_pos * cell_size + Vector2i(cell_size / 2, cell_size / 2))
+					create_marker(player, grid_pos * cell_size + Vector2i(floori(cell_size / 2.0), floori(cell_size / 2.0)))
 					if check_win() != 0:
 						get_tree().paused = true
 						$GameOverMenu.show()
@@ -66,15 +66,15 @@ func new_game():
 	$GameOverMenu.hide()
 	get_tree().paused = false
 
-func create_marker(player, position, temp = false):
-	if player == 1:
+func create_marker(marker_player, marker_position, temp = false):
+	if marker_player == 1:
 		var circle = circle_scene.instantiate()
-		circle.position = position
+		circle.position = marker_position
 		add_child(circle)
 		if temp: temp_marker = circle
 	else:
 		var cross = cross_scene.instantiate()
-		cross.position = position
+		cross.position = marker_position
 		add_child(cross)
 		if temp: temp_marker = cross
 

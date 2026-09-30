@@ -5,7 +5,7 @@
 **A lightweight local two-player game that turns a familiar paper-and-pencil pastime into a quick desktop match.**
 
 [![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square&logo=windows&logoColor=white)](https://godotengine.org/)
-[![Engine](https://img.shields.io/badge/Godot-4.2-478CBF?style=flat-square&logo=godotengine&logoColor=white)](https://godotengine.org/)
+[![Engine](https://img.shields.io/badge/Godot-4.7-478CBF?style=flat-square&logo=godotengine&logoColor=white)](https://godotengine.org/)
 [![Language](https://img.shields.io/badge/Language-GDScript-355570?style=flat-square&logo=godotengine&logoColor=white)](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/index.html)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
 
@@ -63,17 +63,25 @@ flowchart TD
 
 | Category | Technology | Purpose |
 | --- | --- | --- |
-| Engine | Godot 4.2 | Scene management, input, rendering, and desktop game runtime |
+| Engine | Godot 4.7 | Scene management, input, rendering, and desktop game runtime |
 | Language | GDScript | Board state, turn logic, and win/draw detection |
 | Architecture | Scene composition and signals | Separates the board, markers, and game-over menu |
 | Rendering | GL Compatibility | Broad desktop graphics compatibility |
 | Target | Windows Desktop | Configured export preset for 64-bit Windows |
 
+## Project Structure
+
+```text
+assets/   Textures, application icon, and Godot import settings
+scenes/   Main game, board, marker, and game-over scenes
+scripts/  Game logic and its game-over menu script
+```
+
 ## Getting Started
 
 ### Prerequisites
 
-- **Godot Engine 4.2 or later**, with the matching export templates if you plan to export a build.
+- **Godot Engine 4.7**, with matching export templates if you plan to export a build.
 - **Git** to clone the repository, or download the repository ZIP from GitHub.
 
 ### 1. Get the project

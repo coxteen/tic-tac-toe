@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://58ckkww0pcvi"
-path="res://.godot/imported/cross.png-bcc6b28a9469641d0e5e0111af55c5b8.ctex"
+uid="uid://di7yh50otd3de"
+path="res://.godot/imported/grid.png-0e5acf495abafdc7f64f9b213a44aa0e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cross.png"
-dest_files=["res://.godot/imported/cross.png-bcc6b28a9469641d0e5e0111af55c5b8.ctex"]
+source_file="res://assets/grid.png"
+dest_files=["res://.godot/imported/grid.png-0e5acf495abafdc7f64f9b213a44aa0e.ctex"]
 
 [params]
 

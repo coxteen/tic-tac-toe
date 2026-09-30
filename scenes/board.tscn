@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://b1jnumja7vqa5"]
+
+[node name="Board" type="Sprite2D" unique_id=976242729]
+position = Vector2(300, 300)
