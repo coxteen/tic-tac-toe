@@ -14,7 +14,7 @@
 ---
 
 <p align="center">
-	<img src="https://github.com/user-attachments/assets/7933f160-c93e-49e3-a334-1af48c84d52a" alt="Tic Tac Toe game preview" width="850">
+	<img src="./assets/demo.gif" alt="Tic Tac Toe game preview" width="850">
 </p>
 
 ---
