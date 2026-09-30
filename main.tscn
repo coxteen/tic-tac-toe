@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://dpd7klekgb8my"]
+[gd_scene format=3 uid="uid://dpd7klekgb8my"]
 
-[ext_resource type="Script" path="res://Main.gd" id="1_r487a"]
+[ext_resource type="Script" uid="uid://cptgj563es3jf" path="res://Main.gd" id="1_r487a"]
 [ext_resource type="PackedScene" uid="uid://csuw5ofbpt7lk" path="res://board.tscn" id="2_olovn"]
 [ext_resource type="PackedScene" uid="uid://c7roobj8bhhtg" path="res://circle.tscn" id="2_vb0x1"]
 [ext_resource type="PackedScene" uid="uid://b4r6f22xdjnrl" path="res://cross.tscn" id="3_er5up"]
+[ext_resource type="Texture2D" uid="uid://di7yh50otd3de" path="res://grid.png" id="5_7mycd"]
 [ext_resource type="PackedScene" uid="uid://v4uqnrm7o451" path="res://game_over_menu.tscn" id="5_o75m5"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rlvci"]
@@ -25,21 +26,22 @@ corner_radius_bottom_left = 11
 shadow_size = 6
 shadow_offset = Vector2(3, 3)
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" unique_id=1062149280]
 script = ExtResource("1_r487a")
 circle_scene = ExtResource("2_vb0x1")
 cross_scene = ExtResource("3_er5up")
 
-[node name="Board" parent="." instance=ExtResource("2_olovn")]
+[node name="Board" parent="." unique_id=324507956 instance=ExtResource("2_olovn")]
+texture = ExtResource("5_7mycd")
 
-[node name="SidePanel" type="Panel" parent="."]
+[node name="SidePanel" type="Panel" parent="." unique_id=1475785107]
 custom_minimum_size = Vector2(300, 600)
 offset_left = 600.0
 offset_right = 900.0
 offset_bottom = 600.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_rlvci")
 
-[node name="PlayerLabel" type="Label" parent="."]
+[node name="PlayerLabel" type="Label" parent="." unique_id=157269138]
 offset_left = 600.0
 offset_top = 100.0
 offset_right = 900.0
@@ -49,14 +51,14 @@ text = "Next player : "
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Panel" type="Panel" parent="." unique_id=1020879500]
 offset_left = 650.0
 offset_top = 200.0
 offset_right = 850.0
 offset_bottom = 400.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_85tcm")
 
-[node name="GameOverMenu" parent="." instance=ExtResource("5_o75m5")]
+[node name="GameOverMenu" parent="." unique_id=1158614308 instance=ExtResource("5_o75m5")]
 process_mode = 2
 
 [connection signal="restart" from="GameOverMenu" to="." method="_on_game_over_menu_restart"]
