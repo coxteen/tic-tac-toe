@@ -2,7 +2,7 @@
 
 # Tic Tac Toe
 
-**A lightweight local two-player game that turns a familiar paper-and-pencil pastime into a quick desktop match.**
+**A lightweight local two-player game that turns a familiar paper-and-pencil pastime into a quick desktop match**
 
 [![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square&logo=windows&logoColor=white)](https://godotengine.org/)
 [![Engine](https://img.shields.io/badge/Godot-4.7-478CBF?style=flat-square&logo=godotengine&logoColor=white)](https://godotengine.org/)
