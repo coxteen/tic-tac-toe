@@ -111,4 +111,4 @@ The main scene and initial window size are set in `project.godot`. The current w
 ## License & Author
 
 - **Author:** [Costin Ghiujan](https://github.com/coxteen)
-- **License:** Released under the [MIT License](LICENSE)
+- **License:** Released under the [MIT License](LICENSE).
